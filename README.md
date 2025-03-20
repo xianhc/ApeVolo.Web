@@ -1,13 +1,13 @@
 #### 💒代码仓库(api)
-- net 版本(Github) <a href="https://github.com/xianhc/ape-volo-admin" target="_blank">https://github.com/xianhc/ape-volo-admin</a>
-- net 版本(Gitee) <a href="https://gitee.com/xianhc/ape-volo-admin" target="_blank">https://gitee.com/xianhc/ape-volo-admin</a>
+- net 版本(Github) <a href="https://github.com/xianhc/ApeVolo.Admin" target="_blank">https://github.com/xianhc/ApeVolo.Admin</a>
+- net 版本(Gitee) <a href="https://gitee.com/xianhc/ApeVolo.Admin" target="_blank">https://gitee.com/xianhc/ApeVolo.Admin</a>
 <br><br>
-- go 版本(Github) <a href="https://github.com/xianhc/ape-volo-admin-go" target="_blank">https://github.com/xianhc/ape-volo-admin-go</a>
-- go 版本(Gitee) <a href="https://gitee.com/xianhc/ape-volo-admin-go" target="_blank">https://gitee.com/xianhc/ape-volo-admin-go</a>
+- go 版本(Github) <a href="https://github.com/xianhc/ApeVolo.AdminGO" target="_blank">https://github.com/xianhc/ApeVolo.AdminGO</a>
+- go 版本(Gitee) <a href="https://gitee.com/xianhc/ApeVolo.AdminGO" target="_blank">https://gitee.com/xianhc/ApeVolo.adminGO</a>
 
 #### 💒代码仓库(web)
-- vue2.x 版本(Github) <a href="https://github.com/xianhc/ape-volo-web" target="_blank">https://github.com/xianhc/ape-volo-web</a>
-- vue2.x 版本(Gitee) <a href="https://gitee.com/xianhc/ape-volo-web" target="_blank">https://gitee.com/xianhc/ape-volo-web</a>
+- vue2.x 版本(Github) <a href="https://github.com/xianhc/ApeVolo.Web" target="_blank">https://github.com/xianhc/ApeVolo.Web</a>
+- vue2.x 版本(Gitee) <a href="https://gitee.com/xianhc/ApeVolo.Web" target="_blank">https://gitee.com/xianhc/ApeVolo.Web</a>
 
 #### 🖌️前端模板
 
