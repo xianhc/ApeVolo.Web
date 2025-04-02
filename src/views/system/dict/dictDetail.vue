@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div v-if="query.dictName === ''">
+    <div v-if="query.dictId === 0">
       <div class="my-code">点击字典查看详情</div>
     </div>
     <div v-else>
       <!--工具栏-->
       <div class="head-container">
-        <div v-if="crud.props.searchToggle">
+        <div>
           <!-- 搜索 -->
           <el-input
             v-model="query.label"
@@ -100,7 +100,7 @@ export default {
   cruds() {
     return [
       CRUD({
-        title: '字典详情', url: 'api/dictDetail/query', query: { dictName: '' },
+        title: '字典详情', url: 'api/dictDetail/query', query: { dictId: 0 },
         crudMethod: { ...crudDictDetail },
         optShow: {
           add: true,

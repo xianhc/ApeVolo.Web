@@ -73,6 +73,7 @@
               <el-select v-model="query.dictType" clearable size="small" placeholder="字典类型" class="filter-item" style="width: 150px" @change="crud.toQuery">
                 <el-option v-for="item in dict.dict_type" :key="item.value" :label="item.label" :value="item.value" />
               </el-select>
+              <date-range-picker v-model="query.createTime" class="date-item" />
               <rrOperation />
             </div>
             <crudOperation :permission="permission" />
@@ -128,7 +129,7 @@
               v-if="
                 checkPer(['dict_add']) &&
                   this.$refs.dictDetail &&
-                  this.$refs.dictDetail.query.dictName
+                  this.$refs.dictDetail.query.dictId
               "
               class="filter-item"
               size="mini"
@@ -154,6 +155,7 @@ import crudOperation from '@crud/CRUD.operation'
 import pagination from '@crud/Pagination'
 import rrOperation from '@crud/RR.operation'
 import udOperation from '@crud/UD.operation'
+import DateRangePicker from '@/components/DateRangePicker/index.vue'
 
 const defaultForm = {
   id: null,
@@ -166,6 +168,7 @@ const defaultForm = {
 export default {
   name: 'Dict',
   components: {
+    DateRangePicker,
     crudOperation,
     pagination,
     rrOperation,
@@ -205,13 +208,14 @@ export default {
     // 获取数据前设置好接口地址
     [CRUD.HOOK.beforeRefresh]() {
       if (this.$refs.dictDetail) {
-        this.$refs.dictDetail.query.dictName = ''
+        this.$refs.dictDetail.query.dictId = 0
       }
       return true
     },
     // 选中字典后，设置字典详情数据
     handleCurrentChange(val) {
       if (val) {
+        this.$refs.dictDetail.query.dictId = val.id
         this.$refs.dictDetail.query.dictName = val.name
         this.$refs.dictDetail.dictId = val.id
         this.$refs.dictDetail.crud.toQuery()

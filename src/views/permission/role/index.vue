@@ -5,7 +5,7 @@
       <div v-if="crud.props.searchToggle">
         <!-- 搜索 -->
         <el-input
-          v-model="query.roleName"
+          v-model="query.name"
           size="small"
           clearable
           placeholder="输入角色名称搜索"

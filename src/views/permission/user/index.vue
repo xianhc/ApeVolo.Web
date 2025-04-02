@@ -49,7 +49,7 @@
               @change="crud.toQuery"
             >
               <el-option
-                v-for="item in dict.user_stauas"
+                v-for="item in dict.user_status"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value"
